@@ -1,0 +1,69 @@
+
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+	"firstName": "Aaayushie",
+	"lastName": "Vij",
+	"userName": "aayushie",
+	"password": "asdfghj",
+	"email": "aayushie@gmail.com",
+	"phoneNumber": 948153387644267,
+	"seller": true
+}
+##############
+GET http://localhost:3000/users
+Content-Type: application/json
+
+{}
+
+############
+POST http://localhost:3000/seller
+Content-Type: application/json
+
+{
+	"firstName": "supriya",
+	"lastName": "shetty",
+	"userName": "supriya",
+	"password": "asdfghj",
+	"email": "supriya@gmail.com",
+	"phoneNumber": 9481534267,
+	"seller": true
+}
+
+##########
+GET http://localhost:3000/seller
+Content-Type: application/json
+
+{}
+
+##############
+DELETE  http://localhost:3000/users/61ec21e5f8fa0d8f63c061b2
+Content-Type: application/json
+
+###############
+POST http://localhost:3000/inventory
+Content-Type: application/json
+
+{
+	"name": "gidaMara",
+	"description": "exotic tree",
+	"image": "tree.jpg"
+}
+
+###########
+DELETE  http://localhost:3000/inventory/61ec2217f8fa0d8f63c061b7
+Content-Type: application/json
+
+###########
+GET http://localhost:3000/inventory/61ead9912eebc60fd9c06241
+Content-Type: application/json
+
+###########
+GET http://localhost:3000/inventory
+Content-Type: application/json
+
+###########
+DELETE  http://localhost:3000/seller/61ec2204f8fa0d8f63c061b5
+Content-Type: application/json
